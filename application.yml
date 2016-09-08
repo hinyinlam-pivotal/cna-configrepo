@@ -17,3 +17,12 @@ security:
 management:
    security:
      enabled: false
+
+---
+spring:
+    profiles: dev
+    data:
+        mysql:
+            database: db_host
+            username: username
+            password: password
