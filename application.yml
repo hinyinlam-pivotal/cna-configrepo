@@ -1,15 +1,4 @@
 ---
-message: Hello World 2
-
-spring:
-    profiles: cloud
-    application:
-        name: ${vcap.application.application_name:atomicnumproducer}
-    data:
-        mongodb:
-            database: first-atomic-number2
-            username: example-user2
-            password: example-password2
 security:
   basic:
     enabled: false
@@ -19,10 +8,22 @@ management:
      enabled: false
 
 ---
+message: Hello World 2
+
+spring:
+    profiles: cloud
+    application:
+        name: ${vcap.application.application_name:atomicnumproducer}
+        
+mk_app:
+    key1: value1
+    url: mk.io
+    
+
+
+---
 spring:
     profiles: dev
-    data:
-        mysql:
-            database: db_host
-            username: username
-            password: password
+mk_app:
+    key1: value1
+    url: mk.io
