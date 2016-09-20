@@ -27,3 +27,12 @@ spring:
 mk_app:
     key1: value1
     url: mk.io
+    
+    
+---
+spring:
+    profiles: staging
+mk_app:
+    hintestkey: hintestvalue
+    s3_accesskey: AXXXXXXX
+    s3_secretkey: ASxxxxxxx
