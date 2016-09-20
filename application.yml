@@ -6,7 +6,10 @@ security:
 management:
    security:
      enabled: false
-
+eureka:
+    client:
+        service-url:
+            defaultZone: MarykayDemo-20Sep-3:48pm
 ---
 message: Hello World 2
 
