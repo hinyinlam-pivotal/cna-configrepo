@@ -9,7 +9,7 @@ management:
 eureka:
     client:
         service-url:
-            defaultZone: MarykayDemo-20Sep-4:06pm
+            defaultZone: MarykayDemo-20Sep-4:10pm
 ---
 message: Hello World 2
 
